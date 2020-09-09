@@ -1,0 +1,51 @@
+class User{
+
+    constructor(name, gender, birth, email, password, photo, admin,country){
+        this._name = name;
+        this._gender = gender;
+        this._birth = birth;
+        this._country = country;
+        this._email = email;
+        this._password = password;
+        this._photo = photo;
+        this._admin = admin;
+        this._register = new Date();
+
+    }
+
+    get name(){
+        return this._name;
+    } 
+    get register (){
+        return this._register;    
+    }
+    get gender(){
+        return this._gender;
+    } 
+    get birth(){
+        return this._birth;
+    } 
+    get email(){
+        return this._email;
+    } 
+    get password(){
+        return this._password;
+    } 
+    get photo(){
+        return this._photo;
+    }
+    get country(){
+        return this._country;
+    } 
+    get admin(){
+        return this._admin;
+    }
+
+    set name(value){
+        this._name = value;
+    }
+
+    set photo(value){
+        this._photo = value;
+    }
+}
